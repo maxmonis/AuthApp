@@ -1,0 +1,11 @@
+/node_modules
+/app/node_modules
+
+/dist
+/app/build
+
+/app/coverage
+/app/public/mockServiceWorker.js
+
+.env
+.DS_store

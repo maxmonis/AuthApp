@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main dark mode button allows dark mode toggle 1`] = `
+<DocumentFragment>
+  <main>
+    <div
+      class="h-screen w-screen overflow-x-hidden bg-slate-100 text-slate-950 transition-colors dark:bg-slate-950 dark:text-slate-50"
+    >
+      <nav
+        class="flex items-center justify-between gap-6 px-6 py-4"
+      >
+        <button
+          aria-label="toggle dark mode"
+          class="text-2xl transition-transform [text-shadow:_2px_2px_2px_rgb(0_0_0_/_50%)] active:scale-90"
+        >
+          🌞
+        </button>
+      </nav>
+    </div>
+  </main>
+</DocumentFragment>
+`;
+
+exports[`Main dark mode button allows dark mode toggle 2`] = `
+<DocumentFragment>
+  <main
+    class="dark"
+  >
+    <div
+      class="h-screen w-screen overflow-x-hidden bg-slate-100 text-slate-950 transition-colors dark:bg-slate-950 dark:text-slate-50"
+    >
+      <nav
+        class="flex items-center justify-between gap-6 px-6 py-4"
+      >
+        <button
+          aria-label="toggle dark mode"
+          class="text-2xl transition-transform [text-shadow:_2px_2px_2px_rgb(0_0_0_/_50%)] active:scale-90"
+        >
+          🌜
+        </button>
+      </nav>
+    </div>
+  </main>
+</DocumentFragment>
+`;
+
+exports[`Main user menu displays logout button and email if user logged in 1`] = `
+<DocumentFragment>
+  <main>
+    <div
+      class="h-screen w-screen overflow-x-hidden bg-slate-100 text-slate-950 transition-colors dark:bg-slate-950 dark:text-slate-50"
+    >
+      <nav
+        class="flex items-center justify-between gap-6 px-6 py-4"
+      >
+        <button
+          aria-label="toggle dark mode"
+          class="text-2xl transition-transform [text-shadow:_2px_2px_2px_rgb(0_0_0_/_50%)] active:scale-90"
+        >
+          🌞
+        </button>
+        <div
+          class="flex flex-wrap items-center justify-end gap-x-4"
+        >
+          <p>
+            user@example.com
+          </p>
+          <button
+            class="underline"
+          >
+            Logout
+          </button>
+        </div>
+      </nav>
+    </div>
+  </main>
+</DocumentFragment>
+`;

@@ -1,0 +1,145 @@
+import {mockEmail, mockPassword} from "src/auth/mocks/authMocks"
+import {hasChars, isAlphanumeric, isEmail, isPassword} from "./validators"
+
+const alphanumericValue = "Aa1"
+
+describe("validators", () => {
+  describe("hasChars", () => {
+    test("returns true if value is non empty string", () => {
+      expect(hasChars("string")).toStrictEqual(true)
+    })
+    test("returns false if value is not string", () => {
+      expect(hasChars(undefined)).toStrictEqual(false)
+      expect(hasChars(null)).toStrictEqual(false)
+      expect(hasChars(123456)).toStrictEqual(false)
+      expect(hasChars({string: "string"})).toStrictEqual(false)
+      expect(hasChars(["string"])).toStrictEqual(false)
+    })
+    test("returns false if value is empty string or whitespace", () => {
+      expect(hasChars("")).toStrictEqual(false)
+      expect(hasChars("   ")).toStrictEqual(false)
+    })
+    test("returns true if value reaches min length", () => {
+      expect(hasChars("string", 6)).toStrictEqual(true)
+    })
+    test("returns false if trimmed value does not reach min length", () => {
+      expect(hasChars("string", 7)).toStrictEqual(false)
+      expect(hasChars(" string ", 7)).toStrictEqual(false)
+    })
+  })
+  describe("isAlphanumeric", () => {
+    test("returns true if value is alphanumeric", () => {
+      expect(isAlphanumeric(alphanumericValue)).toStrictEqual(true)
+    })
+    test("returns false if value is not string", () => {
+      expect(isAlphanumeric(undefined)).toStrictEqual(false)
+      expect(isAlphanumeric(null)).toStrictEqual(false)
+      expect(isAlphanumeric(123456)).toStrictEqual(false)
+      expect(isAlphanumeric({value: alphanumericValue})).toStrictEqual(false)
+      expect(isAlphanumeric([alphanumericValue])).toStrictEqual(false)
+    })
+    test("returns false if value contains symbol/whitespace", () => {
+      expect(isAlphanumeric(alphanumericValue + " ")).toStrictEqual(false)
+      expect(isAlphanumeric(alphanumericValue + "!")).toStrictEqual(false)
+      expect(isAlphanumeric(alphanumericValue + "@")).toStrictEqual(false)
+      expect(isAlphanumeric(alphanumericValue + "#")).toStrictEqual(false)
+      expect(isAlphanumeric(alphanumericValue + "$")).toStrictEqual(false)
+      expect(isAlphanumeric(alphanumericValue + "%")).toStrictEqual(false)
+      expect(isAlphanumeric(alphanumericValue + "^")).toStrictEqual(false)
+      expect(isAlphanumeric(alphanumericValue + "&")).toStrictEqual(false)
+      expect(isAlphanumeric(alphanumericValue + "*")).toStrictEqual(false)
+      expect(isAlphanumeric(alphanumericValue + "(")).toStrictEqual(false)
+      expect(isAlphanumeric(alphanumericValue + ")")).toStrictEqual(false)
+      expect(isAlphanumeric(alphanumericValue + "-")).toStrictEqual(false)
+      expect(isAlphanumeric(alphanumericValue + "_")).toStrictEqual(false)
+      expect(isAlphanumeric(alphanumericValue + ",")).toStrictEqual(false)
+      expect(isAlphanumeric(alphanumericValue + ".")).toStrictEqual(false)
+      expect(isAlphanumeric(alphanumericValue + "?")).toStrictEqual(false)
+      expect(isAlphanumeric(alphanumericValue + "/")).toStrictEqual(false)
+      expect(isAlphanumeric(alphanumericValue + "\\")).toStrictEqual(false)
+      expect(isAlphanumeric(alphanumericValue + "|")).toStrictEqual(false)
+      expect(isAlphanumeric(alphanumericValue + ":")).toStrictEqual(false)
+      expect(isAlphanumeric(alphanumericValue + ";")).toStrictEqual(false)
+      expect(isAlphanumeric(alphanumericValue + "'")).toStrictEqual(false)
+      expect(isAlphanumeric(alphanumericValue + '"')).toStrictEqual(false)
+      expect(isAlphanumeric(alphanumericValue + "{")).toStrictEqual(false)
+      expect(isAlphanumeric(alphanumericValue + "}")).toStrictEqual(false)
+      expect(isAlphanumeric(alphanumericValue + "[")).toStrictEqual(false)
+      expect(isAlphanumeric(alphanumericValue + "]")).toStrictEqual(false)
+      expect(isAlphanumeric(alphanumericValue + "`")).toStrictEqual(false)
+      expect(isAlphanumeric(alphanumericValue + "~")).toStrictEqual(false)
+    })
+  })
+  describe("isEmail", () => {
+    test("return true if email is valid", () => {
+      expect(isEmail(mockEmail)).toStrictEqual(true)
+    })
+    test("returns false if email is not string", () => {
+      expect(isEmail(undefined)).toStrictEqual(false)
+      expect(isEmail(null)).toStrictEqual(false)
+      expect(isEmail(123456)).toStrictEqual(false)
+      expect(isEmail({email: mockEmail})).toStrictEqual(false)
+      expect(isEmail([mockEmail])).toStrictEqual(false)
+    })
+    test("returns false if email is invalid", () => {
+      expect(isEmail("some@email")).toStrictEqual(false)
+      expect(isEmail("some.email")).toStrictEqual(false)
+      expect(isEmail("some.email@test")).toStrictEqual(false)
+    })
+  })
+  describe("isPassword", () => {
+    test("returns true if password is valid", () => {
+      expect(isPassword(mockPassword)).toStrictEqual(true)
+    })
+    test("returns false if password is not string", () => {
+      expect(isPassword(undefined)).toStrictEqual(false)
+      expect(isPassword(null)).toStrictEqual(false)
+      expect(isPassword(123456)).toStrictEqual(false)
+      expect(isPassword({password: mockPassword})).toStrictEqual(false)
+      expect(isPassword([mockPassword])).toStrictEqual(false)
+    })
+    test("returns false if password is too short", () => {
+      expect(isPassword("W0rd")).toStrictEqual(false)
+    })
+    test("returns false if password lacks number", () => {
+      expect(isPassword("Password")).toStrictEqual(false)
+    })
+    test("returns false if password lacks uppercase letter", () => {
+      expect(isPassword("password1")).toStrictEqual(false)
+    })
+    test("returns false if password lacks lowercase letter", () => {
+      expect(isPassword("PASSWORD1")).toStrictEqual(false)
+    })
+    test("returns false if password contains symbol/whitespace", () => {
+      expect(isPassword(mockPassword + " ")).toStrictEqual(false)
+      expect(isPassword(mockPassword + "!")).toStrictEqual(false)
+      expect(isPassword(mockPassword + "@")).toStrictEqual(false)
+      expect(isPassword(mockPassword + "#")).toStrictEqual(false)
+      expect(isPassword(mockPassword + "$")).toStrictEqual(false)
+      expect(isPassword(mockPassword + "%")).toStrictEqual(false)
+      expect(isPassword(mockPassword + "^")).toStrictEqual(false)
+      expect(isPassword(mockPassword + "&")).toStrictEqual(false)
+      expect(isPassword(mockPassword + "*")).toStrictEqual(false)
+      expect(isPassword(mockPassword + "(")).toStrictEqual(false)
+      expect(isPassword(mockPassword + ")")).toStrictEqual(false)
+      expect(isPassword(mockPassword + "-")).toStrictEqual(false)
+      expect(isPassword(mockPassword + "_")).toStrictEqual(false)
+      expect(isPassword(mockPassword + ",")).toStrictEqual(false)
+      expect(isPassword(mockPassword + ".")).toStrictEqual(false)
+      expect(isPassword(mockPassword + "?")).toStrictEqual(false)
+      expect(isPassword(mockPassword + "/")).toStrictEqual(false)
+      expect(isPassword(mockPassword + "\\")).toStrictEqual(false)
+      expect(isPassword(mockPassword + "|")).toStrictEqual(false)
+      expect(isPassword(mockPassword + ":")).toStrictEqual(false)
+      expect(isPassword(mockPassword + ";")).toStrictEqual(false)
+      expect(isPassword(mockPassword + "'")).toStrictEqual(false)
+      expect(isPassword(mockPassword + '"')).toStrictEqual(false)
+      expect(isPassword(mockPassword + "{")).toStrictEqual(false)
+      expect(isPassword(mockPassword + "}")).toStrictEqual(false)
+      expect(isPassword(mockPassword + "[")).toStrictEqual(false)
+      expect(isPassword(mockPassword + "]")).toStrictEqual(false)
+      expect(isPassword(mockPassword + "`")).toStrictEqual(false)
+      expect(isPassword(mockPassword + "~")).toStrictEqual(false)
+    })
+  })
+})

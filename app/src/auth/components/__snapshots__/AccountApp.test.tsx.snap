@@ -1,0 +1,2924 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccountApp forgot-password error handling displays 404 if user not found 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center px-6"
+  >
+    <div
+      class="mb-40 mt-10 flex max-h-min w-full max-w-xs flex-col gap-3 rounded-md border border-slate-700 bg-white p-6 dark:bg-black"
+    >
+      <div
+        class="mx-auto flex items-center gap-2"
+      >
+        <img
+          alt="AuthApp logo"
+          class="h-6 w-6"
+          src="/logo192.png"
+        />
+        <h1
+          class="text-2xl"
+        >
+          AuthApp
+        </h1>
+      </div>
+      <h2
+        class="text-center text-xl font-bold"
+      >
+        Reset Password
+      </h2>
+      <form
+        class="flex flex-col gap-3"
+        novalidate=""
+      >
+        <div
+          class="rounded-lg bg-red-600 px-4 py-2 text-slate-50"
+        >
+          404: User not found
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="email"
+          >
+            Email
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-slate-700"
+            id="email"
+            name="email"
+            type="email"
+            value="not@user.email"
+          />
+        </div>
+        <button
+          class="flex items-center justify-center gap-3 rounded-md bg-blue-600 px-4 py-2 font-bold text-white transition-colors enabled:hover:bg-blue-700 mb-1 mt-2"
+          disabled=""
+          type="submit"
+        >
+          Send Link
+        </button>
+      </form>
+      <div
+        class="flex flex-wrap gap-x-1.5"
+      >
+        <p
+          class="whitespace-nowrap"
+        >
+          Need an account?
+        </p>
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/register"
+        >
+          Register
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AccountApp forgot-password error handling displays 404 if user not found 2`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center px-6"
+  >
+    <div
+      class="mb-40 mt-10 flex max-h-min w-full max-w-xs flex-col gap-3 rounded-md border border-slate-700 bg-white p-6 dark:bg-black"
+    >
+      <div
+        class="mx-auto flex items-center gap-2"
+      >
+        <img
+          alt="AuthApp logo"
+          class="h-6 w-6"
+          src="/logo192.png"
+        />
+        <h1
+          class="text-2xl"
+        >
+          AuthApp
+        </h1>
+      </div>
+      <h2
+        class="text-center text-xl font-bold"
+      >
+        Reset Password
+      </h2>
+      <form
+        class="flex flex-col gap-3"
+        novalidate=""
+      >
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="email"
+          >
+            Email
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-slate-700"
+            id="email"
+            name="email"
+            type="email"
+            value="not@user.email"
+          />
+        </div>
+        <button
+          class="flex items-center justify-center gap-3 rounded-md bg-blue-600 px-4 py-2 font-bold text-white transition-colors enabled:hover:bg-blue-700 mb-1 mt-2"
+          type="submit"
+        >
+          Send Link
+        </button>
+      </form>
+      <div
+        class="flex flex-wrap gap-x-1.5"
+      >
+        <p
+          class="whitespace-nowrap"
+        >
+          Need an account?
+        </p>
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/register"
+        >
+          Register
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AccountApp forgot-password renders form 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center px-6"
+  >
+    <div
+      class="mb-40 mt-10 flex max-h-min w-full max-w-xs flex-col gap-3 rounded-md border border-slate-700 bg-white p-6 dark:bg-black"
+    >
+      <div
+        class="mx-auto flex items-center gap-2"
+      >
+        <img
+          alt="AuthApp logo"
+          class="h-6 w-6"
+          src="/logo192.png"
+        />
+        <h1
+          class="text-2xl"
+        >
+          AuthApp
+        </h1>
+      </div>
+      <h2
+        class="text-center text-xl font-bold"
+      >
+        Reset Password
+      </h2>
+      <form
+        class="flex flex-col gap-3"
+        novalidate=""
+      >
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="email"
+          >
+            Email
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-slate-700"
+            id="email"
+            name="email"
+            type="email"
+            value=""
+          />
+        </div>
+        <button
+          class="flex items-center justify-center gap-3 rounded-md bg-blue-600 px-4 py-2 font-bold text-white transition-colors enabled:hover:bg-blue-700 mb-1 mt-2"
+          type="submit"
+        >
+          Send Link
+        </button>
+      </form>
+      <div
+        class="flex flex-wrap gap-x-1.5"
+      >
+        <p
+          class="whitespace-nowrap"
+        >
+          Need an account?
+        </p>
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/register"
+        >
+          Register
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AccountApp forgot-password submission shows message on success 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center px-6"
+  >
+    <div
+      class="mb-40 mt-10 flex max-h-min w-full max-w-xs flex-col gap-3 rounded-md border border-slate-700 bg-white p-6 dark:bg-black"
+    >
+      <div
+        class="mx-auto flex items-center gap-2"
+      >
+        <img
+          alt="AuthApp logo"
+          class="h-6 w-6"
+          src="/logo192.png"
+        />
+        <h1
+          class="text-2xl"
+        >
+          AuthApp
+        </h1>
+      </div>
+      <h2
+        class="text-center text-xl font-bold"
+      >
+        Email Sent
+      </h2>
+      <p>
+        To finish resetting your password, click the link in the message we've sent to 
+        <span
+          class="break-words font-bold"
+        >
+          user@example.com
+        </span>
+        .
+      </p>
+      <p>
+        It may take a few seconds to arrive, but the link will be valid for ten minutes. Check your spam folder if you can't find it in your inbox.
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AccountApp forgot-password validation email is required 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center px-6"
+  >
+    <div
+      class="mb-40 mt-10 flex max-h-min w-full max-w-xs flex-col gap-3 rounded-md border border-slate-700 bg-white p-6 dark:bg-black"
+    >
+      <div
+        class="mx-auto flex items-center gap-2"
+      >
+        <img
+          alt="AuthApp logo"
+          class="h-6 w-6"
+          src="/logo192.png"
+        />
+        <h1
+          class="text-2xl"
+        >
+          AuthApp
+        </h1>
+      </div>
+      <h2
+        class="text-center text-xl font-bold"
+      >
+        Reset Password
+      </h2>
+      <form
+        class="flex flex-col gap-3"
+        novalidate=""
+      >
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="email"
+          >
+            Email
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="email"
+            name="email"
+            type="email"
+            value=""
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Email is required
+          </p>
+        </div>
+        <button
+          class="flex items-center justify-center gap-3 rounded-md bg-blue-600 px-4 py-2 font-bold text-white transition-colors enabled:hover:bg-blue-700 mb-1 mt-2"
+          type="submit"
+        >
+          Send Link
+        </button>
+      </form>
+      <div
+        class="flex flex-wrap gap-x-1.5"
+      >
+        <p
+          class="whitespace-nowrap"
+        >
+          Need an account?
+        </p>
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/register"
+        >
+          Register
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AccountApp forgot-password validation validates email 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center px-6"
+  >
+    <div
+      class="mb-40 mt-10 flex max-h-min w-full max-w-xs flex-col gap-3 rounded-md border border-slate-700 bg-white p-6 dark:bg-black"
+    >
+      <div
+        class="mx-auto flex items-center gap-2"
+      >
+        <img
+          alt="AuthApp logo"
+          class="h-6 w-6"
+          src="/logo192.png"
+        />
+        <h1
+          class="text-2xl"
+        >
+          AuthApp
+        </h1>
+      </div>
+      <h2
+        class="text-center text-xl font-bold"
+      >
+        Reset Password
+      </h2>
+      <form
+        class="flex flex-col gap-3"
+        novalidate=""
+      >
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="email"
+          >
+            Email
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="email"
+            name="email"
+            type="email"
+            value="notanemail"
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Invalid email
+          </p>
+        </div>
+        <button
+          class="flex items-center justify-center gap-3 rounded-md bg-blue-600 px-4 py-2 font-bold text-white transition-colors enabled:hover:bg-blue-700 mb-1 mt-2"
+          type="submit"
+        >
+          Send Link
+        </button>
+      </form>
+      <div
+        class="flex flex-wrap gap-x-1.5"
+      >
+        <p
+          class="whitespace-nowrap"
+        >
+          Need an account?
+        </p>
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/register"
+        >
+          Register
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AccountApp login error handling displays 401 if password incorrect 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center px-6"
+  >
+    <div
+      class="mb-40 mt-10 flex max-h-min w-full max-w-xs flex-col gap-3 rounded-md border border-slate-700 bg-white p-6 dark:bg-black"
+    >
+      <div
+        class="mx-auto flex items-center gap-2"
+      >
+        <img
+          alt="AuthApp logo"
+          class="h-6 w-6"
+          src="/logo192.png"
+        />
+        <h1
+          class="text-2xl"
+        >
+          AuthApp
+        </h1>
+      </div>
+      <h2
+        class="text-center text-xl font-bold"
+      >
+        Access Account
+      </h2>
+      <form
+        class="flex flex-col gap-3"
+        novalidate=""
+      >
+        <div
+          class="rounded-lg bg-red-600 px-4 py-2 text-slate-50"
+        >
+          401: Incorrect password
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="email"
+          >
+            Email
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-slate-700"
+            id="email"
+            name="email"
+            type="email"
+            value="user@example.com"
+          />
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password"
+          >
+            Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-slate-700"
+            id="password"
+            name="password"
+            type="password"
+            value="Wrong123"
+          />
+        </div>
+        <button
+          class="flex items-center justify-center gap-3 rounded-md bg-blue-600 px-4 py-2 font-bold text-white transition-colors enabled:hover:bg-blue-700 mb-1 mt-2"
+          disabled=""
+          type="submit"
+        >
+          Log In
+        </button>
+      </form>
+      <div
+        class="-mb-1"
+      >
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/forgot-password"
+        >
+          Forgot Password
+        </a>
+      </div>
+      <div
+        class="flex flex-wrap gap-x-1.5"
+      >
+        <p
+          class="whitespace-nowrap"
+        >
+          Need an account?
+        </p>
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/register"
+        >
+          Register
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AccountApp login error handling displays 401 if password incorrect 2`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center px-6"
+  >
+    <div
+      class="mb-40 mt-10 flex max-h-min w-full max-w-xs flex-col gap-3 rounded-md border border-slate-700 bg-white p-6 dark:bg-black"
+    >
+      <div
+        class="mx-auto flex items-center gap-2"
+      >
+        <img
+          alt="AuthApp logo"
+          class="h-6 w-6"
+          src="/logo192.png"
+        />
+        <h1
+          class="text-2xl"
+        >
+          AuthApp
+        </h1>
+      </div>
+      <h2
+        class="text-center text-xl font-bold"
+      >
+        Access Account
+      </h2>
+      <form
+        class="flex flex-col gap-3"
+        novalidate=""
+      >
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="email"
+          >
+            Email
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-slate-700"
+            id="email"
+            name="email"
+            type="email"
+            value="user@example.com"
+          />
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password"
+          >
+            Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-slate-700"
+            id="password"
+            name="password"
+            type="password"
+            value="Wrong123"
+          />
+        </div>
+        <button
+          class="flex items-center justify-center gap-3 rounded-md bg-blue-600 px-4 py-2 font-bold text-white transition-colors enabled:hover:bg-blue-700 mb-1 mt-2"
+          type="submit"
+        >
+          Log In
+        </button>
+      </form>
+      <div
+        class="-mb-1"
+      >
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/forgot-password"
+        >
+          Forgot Password
+        </a>
+      </div>
+      <div
+        class="flex flex-wrap gap-x-1.5"
+      >
+        <p
+          class="whitespace-nowrap"
+        >
+          Need an account?
+        </p>
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/register"
+        >
+          Register
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AccountApp login error handling displays 404 if user not found 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center px-6"
+  >
+    <div
+      class="mb-40 mt-10 flex max-h-min w-full max-w-xs flex-col gap-3 rounded-md border border-slate-700 bg-white p-6 dark:bg-black"
+    >
+      <div
+        class="mx-auto flex items-center gap-2"
+      >
+        <img
+          alt="AuthApp logo"
+          class="h-6 w-6"
+          src="/logo192.png"
+        />
+        <h1
+          class="text-2xl"
+        >
+          AuthApp
+        </h1>
+      </div>
+      <h2
+        class="text-center text-xl font-bold"
+      >
+        Access Account
+      </h2>
+      <form
+        class="flex flex-col gap-3"
+        novalidate=""
+      >
+        <div
+          class="rounded-lg bg-red-600 px-4 py-2 text-slate-50"
+        >
+          404: User not found
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="email"
+          >
+            Email
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-slate-700"
+            id="email"
+            name="email"
+            type="email"
+            value="not@user.email"
+          />
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password"
+          >
+            Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-slate-700"
+            id="password"
+            name="password"
+            type="password"
+            value="Passw0rd"
+          />
+        </div>
+        <button
+          class="flex items-center justify-center gap-3 rounded-md bg-blue-600 px-4 py-2 font-bold text-white transition-colors enabled:hover:bg-blue-700 mb-1 mt-2"
+          disabled=""
+          type="submit"
+        >
+          Log In
+        </button>
+      </form>
+      <div
+        class="-mb-1"
+      >
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/forgot-password"
+        >
+          Forgot Password
+        </a>
+      </div>
+      <div
+        class="flex flex-wrap gap-x-1.5"
+      >
+        <p
+          class="whitespace-nowrap"
+        >
+          Need an account?
+        </p>
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/register"
+        >
+          Register
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AccountApp login error handling displays 404 if user not found 2`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center px-6"
+  >
+    <div
+      class="mb-40 mt-10 flex max-h-min w-full max-w-xs flex-col gap-3 rounded-md border border-slate-700 bg-white p-6 dark:bg-black"
+    >
+      <div
+        class="mx-auto flex items-center gap-2"
+      >
+        <img
+          alt="AuthApp logo"
+          class="h-6 w-6"
+          src="/logo192.png"
+        />
+        <h1
+          class="text-2xl"
+        >
+          AuthApp
+        </h1>
+      </div>
+      <h2
+        class="text-center text-xl font-bold"
+      >
+        Access Account
+      </h2>
+      <form
+        class="flex flex-col gap-3"
+        novalidate=""
+      >
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="email"
+          >
+            Email
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-slate-700"
+            id="email"
+            name="email"
+            type="email"
+            value="not@user.email"
+          />
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password"
+          >
+            Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-slate-700"
+            id="password"
+            name="password"
+            type="password"
+            value="Passw0rd"
+          />
+        </div>
+        <button
+          class="flex items-center justify-center gap-3 rounded-md bg-blue-600 px-4 py-2 font-bold text-white transition-colors enabled:hover:bg-blue-700 mb-1 mt-2"
+          type="submit"
+        >
+          Log In
+        </button>
+      </form>
+      <div
+        class="-mb-1"
+      >
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/forgot-password"
+        >
+          Forgot Password
+        </a>
+      </div>
+      <div
+        class="flex flex-wrap gap-x-1.5"
+      >
+        <p
+          class="whitespace-nowrap"
+        >
+          Need an account?
+        </p>
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/register"
+        >
+          Register
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AccountApp login renders form 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center px-6"
+  >
+    <div
+      class="mb-40 mt-10 flex max-h-min w-full max-w-xs flex-col gap-3 rounded-md border border-slate-700 bg-white p-6 dark:bg-black"
+    >
+      <div
+        class="mx-auto flex items-center gap-2"
+      >
+        <img
+          alt="AuthApp logo"
+          class="h-6 w-6"
+          src="/logo192.png"
+        />
+        <h1
+          class="text-2xl"
+        >
+          AuthApp
+        </h1>
+      </div>
+      <h2
+        class="text-center text-xl font-bold"
+      >
+        Access Account
+      </h2>
+      <form
+        class="flex flex-col gap-3"
+        novalidate=""
+      >
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="email"
+          >
+            Email
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-slate-700"
+            id="email"
+            name="email"
+            type="email"
+            value=""
+          />
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password"
+          >
+            Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-slate-700"
+            id="password"
+            name="password"
+            type="password"
+            value=""
+          />
+        </div>
+        <button
+          class="flex items-center justify-center gap-3 rounded-md bg-blue-600 px-4 py-2 font-bold text-white transition-colors enabled:hover:bg-blue-700 mb-1 mt-2"
+          type="submit"
+        >
+          Log In
+        </button>
+      </form>
+      <div
+        class="-mb-1"
+      >
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/forgot-password"
+        >
+          Forgot Password
+        </a>
+      </div>
+      <div
+        class="flex flex-wrap gap-x-1.5"
+      >
+        <p
+          class="whitespace-nowrap"
+        >
+          Need an account?
+        </p>
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/register"
+        >
+          Register
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AccountApp login validation email and password are required 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center px-6"
+  >
+    <div
+      class="mb-40 mt-10 flex max-h-min w-full max-w-xs flex-col gap-3 rounded-md border border-slate-700 bg-white p-6 dark:bg-black"
+    >
+      <div
+        class="mx-auto flex items-center gap-2"
+      >
+        <img
+          alt="AuthApp logo"
+          class="h-6 w-6"
+          src="/logo192.png"
+        />
+        <h1
+          class="text-2xl"
+        >
+          AuthApp
+        </h1>
+      </div>
+      <h2
+        class="text-center text-xl font-bold"
+      >
+        Access Account
+      </h2>
+      <form
+        class="flex flex-col gap-3"
+        novalidate=""
+      >
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="email"
+          >
+            Email
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="email"
+            name="email"
+            type="email"
+            value=""
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Email is required
+          </p>
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password"
+          >
+            Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="password"
+            name="password"
+            type="password"
+            value=""
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Password is required
+          </p>
+        </div>
+        <button
+          class="flex items-center justify-center gap-3 rounded-md bg-blue-600 px-4 py-2 font-bold text-white transition-colors enabled:hover:bg-blue-700 mb-1 mt-2"
+          type="submit"
+        >
+          Log In
+        </button>
+      </form>
+      <div
+        class="-mb-1"
+      >
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/forgot-password"
+        >
+          Forgot Password
+        </a>
+      </div>
+      <div
+        class="flex flex-wrap gap-x-1.5"
+      >
+        <p
+          class="whitespace-nowrap"
+        >
+          Need an account?
+        </p>
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/register"
+        >
+          Register
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AccountApp login validation validates email 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center px-6"
+  >
+    <div
+      class="mb-40 mt-10 flex max-h-min w-full max-w-xs flex-col gap-3 rounded-md border border-slate-700 bg-white p-6 dark:bg-black"
+    >
+      <div
+        class="mx-auto flex items-center gap-2"
+      >
+        <img
+          alt="AuthApp logo"
+          class="h-6 w-6"
+          src="/logo192.png"
+        />
+        <h1
+          class="text-2xl"
+        >
+          AuthApp
+        </h1>
+      </div>
+      <h2
+        class="text-center text-xl font-bold"
+      >
+        Access Account
+      </h2>
+      <form
+        class="flex flex-col gap-3"
+        novalidate=""
+      >
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="email"
+          >
+            Email
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="email"
+            name="email"
+            type="email"
+            value="notanemail"
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Invalid email
+          </p>
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password"
+          >
+            Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="password"
+            name="password"
+            type="password"
+            value=""
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Password is required
+          </p>
+        </div>
+        <button
+          class="flex items-center justify-center gap-3 rounded-md bg-blue-600 px-4 py-2 font-bold text-white transition-colors enabled:hover:bg-blue-700 mb-1 mt-2"
+          type="submit"
+        >
+          Log In
+        </button>
+      </form>
+      <div
+        class="-mb-1"
+      >
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/forgot-password"
+        >
+          Forgot Password
+        </a>
+      </div>
+      <div
+        class="flex flex-wrap gap-x-1.5"
+      >
+        <p
+          class="whitespace-nowrap"
+        >
+          Need an account?
+        </p>
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/register"
+        >
+          Register
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AccountApp login validation validates password 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center px-6"
+  >
+    <div
+      class="mb-40 mt-10 flex max-h-min w-full max-w-xs flex-col gap-3 rounded-md border border-slate-700 bg-white p-6 dark:bg-black"
+    >
+      <div
+        class="mx-auto flex items-center gap-2"
+      >
+        <img
+          alt="AuthApp logo"
+          class="h-6 w-6"
+          src="/logo192.png"
+        />
+        <h1
+          class="text-2xl"
+        >
+          AuthApp
+        </h1>
+      </div>
+      <h2
+        class="text-center text-xl font-bold"
+      >
+        Access Account
+      </h2>
+      <form
+        class="flex flex-col gap-3"
+        novalidate=""
+      >
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="email"
+          >
+            Email
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="email"
+            name="email"
+            type="email"
+            value=""
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Email is required
+          </p>
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password"
+          >
+            Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="password"
+            name="password"
+            type="password"
+            value="notapassword"
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Password must contain at least eight characters including a lowercase letter, an uppercase letter, and a number
+          </p>
+        </div>
+        <button
+          class="flex items-center justify-center gap-3 rounded-md bg-blue-600 px-4 py-2 font-bold text-white transition-colors enabled:hover:bg-blue-700 mb-1 mt-2"
+          type="submit"
+        >
+          Log In
+        </button>
+      </form>
+      <div
+        class="-mb-1"
+      >
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/forgot-password"
+        >
+          Forgot Password
+        </a>
+      </div>
+      <div
+        class="flex flex-wrap gap-x-1.5"
+      >
+        <p
+          class="whitespace-nowrap"
+        >
+          Need an account?
+        </p>
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/register"
+        >
+          Register
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AccountApp login validation validates password 2`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center px-6"
+  >
+    <div
+      class="mb-40 mt-10 flex max-h-min w-full max-w-xs flex-col gap-3 rounded-md border border-slate-700 bg-white p-6 dark:bg-black"
+    >
+      <div
+        class="mx-auto flex items-center gap-2"
+      >
+        <img
+          alt="AuthApp logo"
+          class="h-6 w-6"
+          src="/logo192.png"
+        />
+        <h1
+          class="text-2xl"
+        >
+          AuthApp
+        </h1>
+      </div>
+      <h2
+        class="text-center text-xl font-bold"
+      >
+        Access Account
+      </h2>
+      <form
+        class="flex flex-col gap-3"
+        novalidate=""
+      >
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="email"
+          >
+            Email
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="email"
+            name="email"
+            type="email"
+            value=""
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Email is required
+          </p>
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password"
+          >
+            Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="password"
+            name="password"
+            type="password"
+            value="Passw0rd!"
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Password can only contain letters and numbers
+          </p>
+        </div>
+        <button
+          class="flex items-center justify-center gap-3 rounded-md bg-blue-600 px-4 py-2 font-bold text-white transition-colors enabled:hover:bg-blue-700 mb-1 mt-2"
+          type="submit"
+        >
+          Log In
+        </button>
+      </form>
+      <div
+        class="-mb-1"
+      >
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/forgot-password"
+        >
+          Forgot Password
+        </a>
+      </div>
+      <div
+        class="flex flex-wrap gap-x-1.5"
+      >
+        <p
+          class="whitespace-nowrap"
+        >
+          Need an account?
+        </p>
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/register"
+        >
+          Register
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AccountApp register error handling shows 400 if user already exists 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center px-6"
+  >
+    <div
+      class="mb-40 mt-10 flex max-h-min w-full max-w-xs flex-col gap-3 rounded-md border border-slate-700 bg-white p-6 dark:bg-black"
+    >
+      <div
+        class="mx-auto flex items-center gap-2"
+      >
+        <img
+          alt="AuthApp logo"
+          class="h-6 w-6"
+          src="/logo192.png"
+        />
+        <h1
+          class="text-2xl"
+        >
+          AuthApp
+        </h1>
+      </div>
+      <h2
+        class="text-center text-xl font-bold"
+      >
+        Create Account
+      </h2>
+      <form
+        class="flex flex-col gap-3"
+        novalidate=""
+      >
+        <div
+          class="rounded-lg bg-red-600 px-4 py-2 text-slate-50"
+        >
+          400: User already exists
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="email"
+          >
+            Email
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-slate-700"
+            id="email"
+            name="email"
+            type="email"
+            value="user@example.com"
+          />
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password"
+          >
+            Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-slate-700"
+            id="password"
+            name="password"
+            type="password"
+            value="Passw0rd"
+          />
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password2"
+          >
+            Confirm Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-slate-700"
+            id="password2"
+            name="password2"
+            type="password"
+            value="Passw0rd"
+          />
+        </div>
+        <button
+          class="flex items-center justify-center gap-3 rounded-md bg-blue-600 px-4 py-2 font-bold text-white transition-colors enabled:hover:bg-blue-700 mb-1 mt-2"
+          disabled=""
+          type="submit"
+        >
+          Sign Up
+        </button>
+      </form>
+      <div
+        class="flex flex-wrap gap-x-1.5"
+      >
+        <p
+          class="whitespace-nowrap"
+        >
+          Already a member?
+        </p>
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/login"
+        >
+          Login
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AccountApp register error handling shows 400 if user already exists 2`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center px-6"
+  >
+    <div
+      class="mb-40 mt-10 flex max-h-min w-full max-w-xs flex-col gap-3 rounded-md border border-slate-700 bg-white p-6 dark:bg-black"
+    >
+      <div
+        class="mx-auto flex items-center gap-2"
+      >
+        <img
+          alt="AuthApp logo"
+          class="h-6 w-6"
+          src="/logo192.png"
+        />
+        <h1
+          class="text-2xl"
+        >
+          AuthApp
+        </h1>
+      </div>
+      <h2
+        class="text-center text-xl font-bold"
+      >
+        Create Account
+      </h2>
+      <form
+        class="flex flex-col gap-3"
+        novalidate=""
+      >
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="email"
+          >
+            Email
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-slate-700"
+            id="email"
+            name="email"
+            type="email"
+            value="user@example.com"
+          />
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password"
+          >
+            Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-slate-700"
+            id="password"
+            name="password"
+            type="password"
+            value="Passw0rd"
+          />
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password2"
+          >
+            Confirm Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-slate-700"
+            id="password2"
+            name="password2"
+            type="password"
+            value="Passw0rd"
+          />
+        </div>
+        <button
+          class="flex items-center justify-center gap-3 rounded-md bg-blue-600 px-4 py-2 font-bold text-white transition-colors enabled:hover:bg-blue-700 mb-1 mt-2"
+          type="submit"
+        >
+          Sign Up
+        </button>
+      </form>
+      <div
+        class="flex flex-wrap gap-x-1.5"
+      >
+        <p
+          class="whitespace-nowrap"
+        >
+          Already a member?
+        </p>
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/login"
+        >
+          Login
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AccountApp register renders form 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center px-6"
+  >
+    <div
+      class="mb-40 mt-10 flex max-h-min w-full max-w-xs flex-col gap-3 rounded-md border border-slate-700 bg-white p-6 dark:bg-black"
+    >
+      <div
+        class="mx-auto flex items-center gap-2"
+      >
+        <img
+          alt="AuthApp logo"
+          class="h-6 w-6"
+          src="/logo192.png"
+        />
+        <h1
+          class="text-2xl"
+        >
+          AuthApp
+        </h1>
+      </div>
+      <h2
+        class="text-center text-xl font-bold"
+      >
+        Create Account
+      </h2>
+      <form
+        class="flex flex-col gap-3"
+        novalidate=""
+      >
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="email"
+          >
+            Email
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-slate-700"
+            id="email"
+            name="email"
+            type="email"
+            value=""
+          />
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password"
+          >
+            Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-slate-700"
+            id="password"
+            name="password"
+            type="password"
+            value=""
+          />
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password2"
+          >
+            Confirm Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-slate-700"
+            id="password2"
+            name="password2"
+            type="password"
+            value=""
+          />
+        </div>
+        <button
+          class="flex items-center justify-center gap-3 rounded-md bg-blue-600 px-4 py-2 font-bold text-white transition-colors enabled:hover:bg-blue-700 mb-1 mt-2"
+          type="submit"
+        >
+          Sign Up
+        </button>
+      </form>
+      <div
+        class="flex flex-wrap gap-x-1.5"
+      >
+        <p
+          class="whitespace-nowrap"
+        >
+          Already a member?
+        </p>
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/login"
+        >
+          Login
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AccountApp register submission shows message on success 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center px-6"
+  >
+    <div
+      class="mb-40 mt-10 flex max-h-min w-full max-w-xs flex-col gap-3 rounded-md border border-slate-700 bg-white p-6 dark:bg-black"
+    >
+      <div
+        class="mx-auto flex items-center gap-2"
+      >
+        <img
+          alt="AuthApp logo"
+          class="h-6 w-6"
+          src="/logo192.png"
+        />
+        <h1
+          class="text-2xl"
+        >
+          AuthApp
+        </h1>
+      </div>
+      <h2
+        class="text-center text-xl font-bold"
+      >
+        Email Sent
+      </h2>
+      <p>
+        To complete the registration process, click the link in the message we've sent to 
+        <span
+          class="break-words font-bold"
+        >
+          new@email.test
+        </span>
+        .
+      </p>
+      <p>
+        It may take a few seconds to arrive, but the link will be valid for ten minutes. Check your spam folder if you can't find it in your inbox.
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AccountApp register validation email, password, and password confirmation are required 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center px-6"
+  >
+    <div
+      class="mb-40 mt-10 flex max-h-min w-full max-w-xs flex-col gap-3 rounded-md border border-slate-700 bg-white p-6 dark:bg-black"
+    >
+      <div
+        class="mx-auto flex items-center gap-2"
+      >
+        <img
+          alt="AuthApp logo"
+          class="h-6 w-6"
+          src="/logo192.png"
+        />
+        <h1
+          class="text-2xl"
+        >
+          AuthApp
+        </h1>
+      </div>
+      <h2
+        class="text-center text-xl font-bold"
+      >
+        Create Account
+      </h2>
+      <form
+        class="flex flex-col gap-3"
+        novalidate=""
+      >
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="email"
+          >
+            Email
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="email"
+            name="email"
+            type="email"
+            value=""
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Email is required
+          </p>
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password"
+          >
+            Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="password"
+            name="password"
+            type="password"
+            value=""
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Password is required
+          </p>
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password2"
+          >
+            Confirm Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="password2"
+            name="password2"
+            type="password"
+            value=""
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Password confirmation is required
+          </p>
+        </div>
+        <button
+          class="flex items-center justify-center gap-3 rounded-md bg-blue-600 px-4 py-2 font-bold text-white transition-colors enabled:hover:bg-blue-700 mb-1 mt-2"
+          type="submit"
+        >
+          Sign Up
+        </button>
+      </form>
+      <div
+        class="flex flex-wrap gap-x-1.5"
+      >
+        <p
+          class="whitespace-nowrap"
+        >
+          Already a member?
+        </p>
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/login"
+        >
+          Login
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AccountApp register validation validates email 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center px-6"
+  >
+    <div
+      class="mb-40 mt-10 flex max-h-min w-full max-w-xs flex-col gap-3 rounded-md border border-slate-700 bg-white p-6 dark:bg-black"
+    >
+      <div
+        class="mx-auto flex items-center gap-2"
+      >
+        <img
+          alt="AuthApp logo"
+          class="h-6 w-6"
+          src="/logo192.png"
+        />
+        <h1
+          class="text-2xl"
+        >
+          AuthApp
+        </h1>
+      </div>
+      <h2
+        class="text-center text-xl font-bold"
+      >
+        Create Account
+      </h2>
+      <form
+        class="flex flex-col gap-3"
+        novalidate=""
+      >
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="email"
+          >
+            Email
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="email"
+            name="email"
+            type="email"
+            value="notanemail"
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Invalid email
+          </p>
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password"
+          >
+            Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="password"
+            name="password"
+            type="password"
+            value=""
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Password is required
+          </p>
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password2"
+          >
+            Confirm Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="password2"
+            name="password2"
+            type="password"
+            value=""
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Password confirmation is required
+          </p>
+        </div>
+        <button
+          class="flex items-center justify-center gap-3 rounded-md bg-blue-600 px-4 py-2 font-bold text-white transition-colors enabled:hover:bg-blue-700 mb-1 mt-2"
+          type="submit"
+        >
+          Sign Up
+        </button>
+      </form>
+      <div
+        class="flex flex-wrap gap-x-1.5"
+      >
+        <p
+          class="whitespace-nowrap"
+        >
+          Already a member?
+        </p>
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/login"
+        >
+          Login
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AccountApp register validation validates password 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center px-6"
+  >
+    <div
+      class="mb-40 mt-10 flex max-h-min w-full max-w-xs flex-col gap-3 rounded-md border border-slate-700 bg-white p-6 dark:bg-black"
+    >
+      <div
+        class="mx-auto flex items-center gap-2"
+      >
+        <img
+          alt="AuthApp logo"
+          class="h-6 w-6"
+          src="/logo192.png"
+        />
+        <h1
+          class="text-2xl"
+        >
+          AuthApp
+        </h1>
+      </div>
+      <h2
+        class="text-center text-xl font-bold"
+      >
+        Create Account
+      </h2>
+      <form
+        class="flex flex-col gap-3"
+        novalidate=""
+      >
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="email"
+          >
+            Email
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="email"
+            name="email"
+            type="email"
+            value=""
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Email is required
+          </p>
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password"
+          >
+            Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="password"
+            name="password"
+            type="password"
+            value="notapassword"
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Password must contain at least eight characters including a lowercase letter, an uppercase letter, and a number
+          </p>
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password2"
+          >
+            Confirm Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="password2"
+            name="password2"
+            type="password"
+            value=""
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Password confirmation is required
+          </p>
+        </div>
+        <button
+          class="flex items-center justify-center gap-3 rounded-md bg-blue-600 px-4 py-2 font-bold text-white transition-colors enabled:hover:bg-blue-700 mb-1 mt-2"
+          type="submit"
+        >
+          Sign Up
+        </button>
+      </form>
+      <div
+        class="flex flex-wrap gap-x-1.5"
+      >
+        <p
+          class="whitespace-nowrap"
+        >
+          Already a member?
+        </p>
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/login"
+        >
+          Login
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AccountApp register validation validates password 2`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center px-6"
+  >
+    <div
+      class="mb-40 mt-10 flex max-h-min w-full max-w-xs flex-col gap-3 rounded-md border border-slate-700 bg-white p-6 dark:bg-black"
+    >
+      <div
+        class="mx-auto flex items-center gap-2"
+      >
+        <img
+          alt="AuthApp logo"
+          class="h-6 w-6"
+          src="/logo192.png"
+        />
+        <h1
+          class="text-2xl"
+        >
+          AuthApp
+        </h1>
+      </div>
+      <h2
+        class="text-center text-xl font-bold"
+      >
+        Create Account
+      </h2>
+      <form
+        class="flex flex-col gap-3"
+        novalidate=""
+      >
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="email"
+          >
+            Email
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="email"
+            name="email"
+            type="email"
+            value=""
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Email is required
+          </p>
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password"
+          >
+            Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="password"
+            name="password"
+            type="password"
+            value="Passw0rd!"
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Password can only contain letters and numbers
+          </p>
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password2"
+          >
+            Confirm Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="password2"
+            name="password2"
+            type="password"
+            value=""
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Password confirmation is required
+          </p>
+        </div>
+        <button
+          class="flex items-center justify-center gap-3 rounded-md bg-blue-600 px-4 py-2 font-bold text-white transition-colors enabled:hover:bg-blue-700 mb-1 mt-2"
+          type="submit"
+        >
+          Sign Up
+        </button>
+      </form>
+      <div
+        class="flex flex-wrap gap-x-1.5"
+      >
+        <p
+          class="whitespace-nowrap"
+        >
+          Already a member?
+        </p>
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/login"
+        >
+          Login
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AccountApp register validation validates password confirmation 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center px-6"
+  >
+    <div
+      class="mb-40 mt-10 flex max-h-min w-full max-w-xs flex-col gap-3 rounded-md border border-slate-700 bg-white p-6 dark:bg-black"
+    >
+      <div
+        class="mx-auto flex items-center gap-2"
+      >
+        <img
+          alt="AuthApp logo"
+          class="h-6 w-6"
+          src="/logo192.png"
+        />
+        <h1
+          class="text-2xl"
+        >
+          AuthApp
+        </h1>
+      </div>
+      <h2
+        class="text-center text-xl font-bold"
+      >
+        Create Account
+      </h2>
+      <form
+        class="flex flex-col gap-3"
+        novalidate=""
+      >
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="email"
+          >
+            Email
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="email"
+            name="email"
+            type="email"
+            value=""
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Email is required
+          </p>
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password"
+          >
+            Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="password"
+            name="password"
+            type="password"
+            value=""
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Password is required
+          </p>
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password2"
+          >
+            Confirm Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="password2"
+            name="password2"
+            type="password"
+            value="notapassword"
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Passwords must match
+          </p>
+        </div>
+        <button
+          class="flex items-center justify-center gap-3 rounded-md bg-blue-600 px-4 py-2 font-bold text-white transition-colors enabled:hover:bg-blue-700 mb-1 mt-2"
+          type="submit"
+        >
+          Sign Up
+        </button>
+      </form>
+      <div
+        class="flex flex-wrap gap-x-1.5"
+      >
+        <p
+          class="whitespace-nowrap"
+        >
+          Already a member?
+        </p>
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/login"
+        >
+          Login
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AccountApp update-password error handling shows error if token invalid 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center px-6"
+  >
+    <div
+      class="mb-40 mt-10 flex max-h-min w-full max-w-xs flex-col gap-3 rounded-md border border-slate-700 bg-white p-6 dark:bg-black"
+    >
+      <div
+        class="mx-auto flex items-center gap-2"
+      >
+        <img
+          alt="AuthApp logo"
+          class="h-6 w-6"
+          src="/logo192.png"
+        />
+        <h1
+          class="text-2xl"
+        >
+          AuthApp
+        </h1>
+      </div>
+      <h2
+        class="text-center text-xl font-bold"
+      >
+        Reset Password
+      </h2>
+      <form
+        class="flex flex-col gap-3"
+        novalidate=""
+      >
+        <div
+          class="rounded-lg bg-red-600 px-4 py-2 text-slate-50"
+        >
+          401: Invalid token
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password"
+          >
+            New Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-slate-700"
+            id="password"
+            name="password"
+            type="password"
+            value="Passw0rd"
+          />
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password2"
+          >
+            Confirm New Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-slate-700"
+            id="password2"
+            name="password2"
+            type="password"
+            value="Passw0rd"
+          />
+        </div>
+        <button
+          class="flex items-center justify-center gap-3 rounded-md bg-blue-600 px-4 py-2 font-bold text-white transition-colors enabled:hover:bg-blue-700 mb-1 mt-2"
+          disabled=""
+          type="submit"
+        >
+          Save New Password
+        </button>
+      </form>
+      <div>
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/login"
+        >
+          Return to Login
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AccountApp update-password error handling shows error if token invalid 2`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center px-6"
+  >
+    <div
+      class="mb-40 mt-10 flex max-h-min w-full max-w-xs flex-col gap-3 rounded-md border border-slate-700 bg-white p-6 dark:bg-black"
+    >
+      <div
+        class="mx-auto flex items-center gap-2"
+      >
+        <img
+          alt="AuthApp logo"
+          class="h-6 w-6"
+          src="/logo192.png"
+        />
+        <h1
+          class="text-2xl"
+        >
+          AuthApp
+        </h1>
+      </div>
+      <h2
+        class="text-center text-xl font-bold"
+      >
+        Reset Password
+      </h2>
+      <form
+        class="flex flex-col gap-3"
+        novalidate=""
+      >
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password"
+          >
+            New Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-slate-700"
+            id="password"
+            name="password"
+            type="password"
+            value="Passw0rd"
+          />
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password2"
+          >
+            Confirm New Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-slate-700"
+            id="password2"
+            name="password2"
+            type="password"
+            value="Passw0rd"
+          />
+        </div>
+        <button
+          class="flex items-center justify-center gap-3 rounded-md bg-blue-600 px-4 py-2 font-bold text-white transition-colors enabled:hover:bg-blue-700 mb-1 mt-2"
+          type="submit"
+        >
+          Save New Password
+        </button>
+      </form>
+      <div>
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/login"
+        >
+          Return to Login
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AccountApp update-password renders form 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center px-6"
+  >
+    <div
+      class="mb-40 mt-10 flex max-h-min w-full max-w-xs flex-col gap-3 rounded-md border border-slate-700 bg-white p-6 dark:bg-black"
+    >
+      <div
+        class="mx-auto flex items-center gap-2"
+      >
+        <img
+          alt="AuthApp logo"
+          class="h-6 w-6"
+          src="/logo192.png"
+        />
+        <h1
+          class="text-2xl"
+        >
+          AuthApp
+        </h1>
+      </div>
+      <h2
+        class="text-center text-xl font-bold"
+      >
+        Reset Password
+      </h2>
+      <form
+        class="flex flex-col gap-3"
+        novalidate=""
+      >
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password"
+          >
+            New Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-slate-700"
+            id="password"
+            name="password"
+            type="password"
+            value=""
+          />
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password2"
+          >
+            Confirm New Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-slate-700"
+            id="password2"
+            name="password2"
+            type="password"
+            value=""
+          />
+        </div>
+        <button
+          class="flex items-center justify-center gap-3 rounded-md bg-blue-600 px-4 py-2 font-bold text-white transition-colors enabled:hover:bg-blue-700 mb-1 mt-2"
+          type="submit"
+        >
+          Save New Password
+        </button>
+      </form>
+      <div>
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/login"
+        >
+          Return to Login
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AccountApp update-password submission navigates to home page on success 1`] = `<DocumentFragment />`;
+
+exports[`AccountApp update-password validation password and password confirmation are required 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center px-6"
+  >
+    <div
+      class="mb-40 mt-10 flex max-h-min w-full max-w-xs flex-col gap-3 rounded-md border border-slate-700 bg-white p-6 dark:bg-black"
+    >
+      <div
+        class="mx-auto flex items-center gap-2"
+      >
+        <img
+          alt="AuthApp logo"
+          class="h-6 w-6"
+          src="/logo192.png"
+        />
+        <h1
+          class="text-2xl"
+        >
+          AuthApp
+        </h1>
+      </div>
+      <h2
+        class="text-center text-xl font-bold"
+      >
+        Reset Password
+      </h2>
+      <form
+        class="flex flex-col gap-3"
+        novalidate=""
+      >
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password"
+          >
+            New Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="password"
+            name="password"
+            type="password"
+            value=""
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Password is required
+          </p>
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password2"
+          >
+            Confirm New Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="password2"
+            name="password2"
+            type="password"
+            value=""
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Password confirmation is required
+          </p>
+        </div>
+        <button
+          class="flex items-center justify-center gap-3 rounded-md bg-blue-600 px-4 py-2 font-bold text-white transition-colors enabled:hover:bg-blue-700 mb-1 mt-2"
+          type="submit"
+        >
+          Save New Password
+        </button>
+      </form>
+      <div>
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/login"
+        >
+          Return to Login
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AccountApp update-password validation validates password 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center px-6"
+  >
+    <div
+      class="mb-40 mt-10 flex max-h-min w-full max-w-xs flex-col gap-3 rounded-md border border-slate-700 bg-white p-6 dark:bg-black"
+    >
+      <div
+        class="mx-auto flex items-center gap-2"
+      >
+        <img
+          alt="AuthApp logo"
+          class="h-6 w-6"
+          src="/logo192.png"
+        />
+        <h1
+          class="text-2xl"
+        >
+          AuthApp
+        </h1>
+      </div>
+      <h2
+        class="text-center text-xl font-bold"
+      >
+        Reset Password
+      </h2>
+      <form
+        class="flex flex-col gap-3"
+        novalidate=""
+      >
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password"
+          >
+            New Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="password"
+            name="password"
+            type="password"
+            value="notapassword"
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Password must contain at least eight characters including a lowercase letter, an uppercase letter, and a number
+          </p>
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password2"
+          >
+            Confirm New Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="password2"
+            name="password2"
+            type="password"
+            value=""
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Password confirmation is required
+          </p>
+        </div>
+        <button
+          class="flex items-center justify-center gap-3 rounded-md bg-blue-600 px-4 py-2 font-bold text-white transition-colors enabled:hover:bg-blue-700 mb-1 mt-2"
+          type="submit"
+        >
+          Save New Password
+        </button>
+      </form>
+      <div>
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/login"
+        >
+          Return to Login
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AccountApp update-password validation validates password 2`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center px-6"
+  >
+    <div
+      class="mb-40 mt-10 flex max-h-min w-full max-w-xs flex-col gap-3 rounded-md border border-slate-700 bg-white p-6 dark:bg-black"
+    >
+      <div
+        class="mx-auto flex items-center gap-2"
+      >
+        <img
+          alt="AuthApp logo"
+          class="h-6 w-6"
+          src="/logo192.png"
+        />
+        <h1
+          class="text-2xl"
+        >
+          AuthApp
+        </h1>
+      </div>
+      <h2
+        class="text-center text-xl font-bold"
+      >
+        Reset Password
+      </h2>
+      <form
+        class="flex flex-col gap-3"
+        novalidate=""
+      >
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password"
+          >
+            New Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="password"
+            name="password"
+            type="password"
+            value="Passw0rd!"
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Password can only contain letters and numbers
+          </p>
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password2"
+          >
+            Confirm New Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="password2"
+            name="password2"
+            type="password"
+            value=""
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Password confirmation is required
+          </p>
+        </div>
+        <button
+          class="flex items-center justify-center gap-3 rounded-md bg-blue-600 px-4 py-2 font-bold text-white transition-colors enabled:hover:bg-blue-700 mb-1 mt-2"
+          type="submit"
+        >
+          Save New Password
+        </button>
+      </form>
+      <div>
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/login"
+        >
+          Return to Login
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AccountApp update-password validation validates password confirmation 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center px-6"
+  >
+    <div
+      class="mb-40 mt-10 flex max-h-min w-full max-w-xs flex-col gap-3 rounded-md border border-slate-700 bg-white p-6 dark:bg-black"
+    >
+      <div
+        class="mx-auto flex items-center gap-2"
+      >
+        <img
+          alt="AuthApp logo"
+          class="h-6 w-6"
+          src="/logo192.png"
+        />
+        <h1
+          class="text-2xl"
+        >
+          AuthApp
+        </h1>
+      </div>
+      <h2
+        class="text-center text-xl font-bold"
+      >
+        Reset Password
+      </h2>
+      <form
+        class="flex flex-col gap-3"
+        novalidate=""
+      >
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password"
+          >
+            New Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="password"
+            name="password"
+            type="password"
+            value=""
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Password is required
+          </p>
+        </div>
+        <div>
+          <label
+            class="ml-1 text-sm"
+            for="password2"
+          >
+            Confirm New Password
+          </label>
+          <input
+            class="w-full rounded-lg border bg-inherit px-3 py-2 transition-colors border-red-600 dark:border-red-500"
+            id="password2"
+            name="password2"
+            type="password"
+            value="notapassword"
+          />
+          <p
+            class="mx-1 text-sm leading-snug text-red-600 dark:text-red-500"
+          >
+            Passwords must match
+          </p>
+        </div>
+        <button
+          class="flex items-center justify-center gap-3 rounded-md bg-blue-600 px-4 py-2 font-bold text-white transition-colors enabled:hover:bg-blue-700 mb-1 mt-2"
+          type="submit"
+        >
+          Save New Password
+        </button>
+      </form>
+      <div>
+        <a
+          class="text-blue-600 dark:text-blue-400"
+          href="/login"
+        >
+          Return to Login
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

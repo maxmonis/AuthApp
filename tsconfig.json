@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react-jsx",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "paths": {
+      "~/*": ["./app/src/*"]
+    },
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es2016"
+  }
+}
