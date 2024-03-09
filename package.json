@@ -33,8 +33,10 @@
     "coverage": "cd app && npm run coverage",
     "dev": "concurrently \"npm run server\" \"cd app && npm start\"",
     "dev:msw": "cd app && npm run dev:msw",
+    "dev:ng": "concurrently \"npm run server\" \"cd ng-app && ng serve\"",
     "server": "nodemon -r tsconfig-paths/register api/server.ts",
     "setup": "npm i && cd app && npm i",
+    "setup:ng": "npm i && cd ng-app && npm i",
     "start": "node dist/server.js",
     "test": "cd app && npm test"
   },

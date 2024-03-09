@@ -1,0 +1,6 @@
+<button [attr.aria-busy]="loading" [disabled]="disabled" [type]="type">
+  @if (loading) {
+    <div aria-busy="true" class="spinner" role="alert"></div>
+  }
+  {{ text }}
+</button>

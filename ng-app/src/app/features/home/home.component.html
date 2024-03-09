@@ -1,0 +1,6 @@
+<app-header />
+<div *ngIf="user$ | async as user" class="home-page">
+  <h1>Welcome to AuthApp!</h1>
+  <p>{{ user.email }}</p>
+  <button (click)="logUserOut()">Logout</button>
+</div>

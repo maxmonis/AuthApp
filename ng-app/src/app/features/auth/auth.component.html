@@ -1,0 +1,138 @@
+@if (!authenticating) {
+  <app-header />
+  <div class="auth-page">
+    <form
+      (ngSubmit)="handleSubmit()"
+      [formGroup]="authForm"
+      class="auth-content"
+    >
+      @if (emailSent) {
+        <h1>Email Sent</h1>
+        <p>
+          To
+          {{
+            path === "register"
+              ? "complete the registration process"
+              : "finish resetting your password"
+          }}, click the link in the message we've sent to
+          <span class="auth-email">{{ email?.value }}</span
+          >.
+        </p>
+        <p>
+          It may take a few seconds to arrive, but the link will be valid for
+          ten minutes. Check your spam folder if you can't find it in your
+          inbox.
+        </p>
+      } @else {
+        <h1>{{ title }}</h1>
+        @if (error) {
+          <div class="auth-error">{{ error }}</div>
+        }
+        @if (email) {
+          <label for="email">Email</label>
+          <input
+            (blur)="hideValidation()"
+            (input)="hideValidation()"
+            [class.invalid]="email.errors && showValidation"
+            autofocus
+            formControlName="email"
+            id="email"
+            maxlength="40"
+            required
+            type="email"
+          />
+          @if (email.errors && showValidation) {
+            <small>
+              @if (email.hasError("required")) {
+                Email is required
+              } @else {
+                Invalid email
+              }
+            </small>
+          }
+        }
+        @if (password) {
+          <label for="password">
+            {{ path === "update-password" ? "New " : "" }}Password
+          </label>
+          <input
+            (blur)="hideValidation()"
+            (input)="hideValidation()"
+            [autofocus]="!email"
+            [class.invalid]="password.errors && showValidation"
+            formControlName="password"
+            id="password"
+            maxlength="40"
+            required
+            type="password"
+          />
+          @if (password.errors && showValidation) {
+            <small>
+              @if (password.hasError("required")) {
+                Password is required
+              } @else if (!isAlphanumeric(password.value)) {
+                Password can only contain letters and numbers
+              } @else {
+                Password must contain at least eight characters including a
+                lowercase letter, an uppercase letter, and a number
+              }
+            </small>
+          }
+        }
+        @if (password2) {
+          <label for="password2">
+            Confirm {{ path === "update-password" ? "New " : "" }}Password
+          </label>
+          <input
+            (blur)="hideValidation()"
+            (input)="hideValidation()"
+            [class.invalid]="password2.errors && showValidation"
+            formControlName="password2"
+            id="password2"
+            maxlength="40"
+            required
+            type="password"
+          />
+          @if (password2.errors && showValidation) {
+            <small>
+              @if (password2.hasError("required")) {
+                Password confirmation is required
+              } @else {
+                Passwords do not match
+              }
+            </small>
+          }
+        }
+        <app-button
+          [disabled]="!!error"
+          [loading]="submitting && !error"
+          [text]="buttonText"
+          type="submit"
+        />
+        @if (path === "login") {
+          <div class="auth-link">
+            <a routerLink="/forgot-password">Forgot Password</a>
+          </div>
+        }
+        @if (path === "forgot-password") {
+          <div class="auth-link">
+            <a routerLink="/login">Return to Login</a>
+          </div>
+        }
+        <div class="auth-link">
+          @switch (path) {
+            @case ("update-password") {
+              <a routerLink="/login">Return to Login</a>
+            }
+            @case ("register") {
+              Already a member? <a routerLink="/login">Login</a>
+            }
+            @default {
+              Need an account? <a routerLink="/register">Register</a>
+            }
+          }
+        </div>
+      }
+    </form>
+  </div>
+}

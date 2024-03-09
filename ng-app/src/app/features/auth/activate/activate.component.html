@@ -1,0 +1,18 @@
+@if (error) {
+  <div class="auth-page">
+    <div class="auth-content">
+      <h1>Invalid Link</h1>
+      <p>We were unable to activate your account using the provided link.</p>
+      <p>
+        If you've already completed setup,
+        <a [routerLink]="(user$ | async) ? '/' : '/login'">
+          visit your account
+        </a>
+      </p>
+      <p>
+        If your activation link has expired,
+        <a (click)="handleLogout()" routerLink="/register">sign up again</a>
+      </p>
+    </div>
+  </div>
+}

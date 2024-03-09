@@ -1,0 +1,11 @@
+<div class="app-page">
+  <div>
+    <router-outlet />
+  </div>
+  <footer>
+    <a href="https://maxmonis.com" target="_blank">© Max Monis {{ year }}</a>
+    <button (click)="toggleDark()" aria-label="toggle dark mode">
+      {{ dark ? "🌜" : "🌞" }}
+    </button>
+  </footer>
+</div>

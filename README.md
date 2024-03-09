@@ -164,6 +164,25 @@ The basic structure is as follows:
 - `app`: React application
   - `build`: gitignored output directory for compiled frontend code
 
+## Angular App
+
+I also wanted to try out [Angular](https://angular.dev/) so I build another
+frontend which uses the same API. It's in the `ng-app` folder and can be
+interacted with in development using the following scripts, which do the same
+things as the corresponding React ones which are explained above:
+
+```
+npm run setup:ng
+```
+
+```
+npm run dev:ng
+```
+
+It has the same basic functionality as the React app, but without tests or mocks
+as of now. Note that you'll need to change the `BASE_URL` environment variable
+to `http://localhost:4200`.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](/LICENSE)
