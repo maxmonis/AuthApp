@@ -34,9 +34,11 @@
     "dev": "concurrently \"npm run server\" \"cd app && npm start\"",
     "dev:msw": "cd app && npm run dev:msw",
     "dev:ng": "concurrently \"npm run server\" \"cd ng-app && ng serve\"",
+    "dev:ts": "concurrently \"npm run server\" \"cd ts-app && npm run dev\"",
     "server": "nodemon -r tsconfig-paths/register api/server.ts",
     "setup": "npm i && cd app && npm i",
     "setup:ng": "npm i && cd ng-app && npm i",
+    "setup:ts": "npm i && cd ts-app && npm i",
     "start": "node dist/server.js",
     "test": "cd app && npm test"
   },
