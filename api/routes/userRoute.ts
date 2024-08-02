@@ -58,7 +58,7 @@ userRoute.post("/login", async (req, res) => {
 
 /* -------------------- Create Account -------------------- */
 
-userRoute.post("/create", async (req, res) => {
+userRoute.post("/register", async (req, res) => {
   const {email, password} = req.body
   if (!isEmail(email) || !isPassword(password))
     return sendError({message: "Invalid payload", res, status: 400})
@@ -126,7 +126,7 @@ userRoute.post("/activate", async (req, res) => {
 
 /* -------------------- Update Password -------------------- */
 
-userRoute.post("/update-password", async (req, res) => {
+userRoute.post("/forgot-password", async (req, res) => {
   const {email} = req.body
   if (!isEmail(email))
     return sendError({message: "Invalid email", res, status: 400})

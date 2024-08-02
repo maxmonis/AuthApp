@@ -190,7 +190,7 @@ describe("AccountApp", () => {
         expect(asFragment()).toMatchSnapshot()
       })
       test("disabled during submission and while error displayed", async () => {
-        server.use(rest.post("/api/user/create", mockRequest))
+        server.use(rest.post("/api/user/register", mockRequest))
         await renderAccountApp("register")
         userEvent.type(screen.getByLabelText("Email"), mockEmail)
         userEvent.type(screen.getByLabelText("Password"), mockPassword)
@@ -268,7 +268,7 @@ describe("AccountApp", () => {
       })
       test("shows unexpected error text if status but no message", async () => {
         server.use(
-          rest.post("/api/user/create", (_req, res, ctx) =>
+          rest.post("/api/user/register", (_req, res, ctx) =>
             res(ctx.status(500)),
           ),
         )
@@ -283,7 +283,7 @@ describe("AccountApp", () => {
       })
       test("shows error text if no status or message", async () => {
         server.use(
-          rest.post("/api/user/create", () => {
+          rest.post("/api/user/register", () => {
             throw Error()
           }),
         )
@@ -318,7 +318,7 @@ describe("AccountApp", () => {
         expect(asFragment()).toMatchSnapshot()
       })
       test("disabled during submission and while error displayed", async () => {
-        server.use(rest.post("/api/user/update-password", mockRequest))
+        server.use(rest.post("/api/user/forgot-password", mockRequest))
         await renderAccountApp("forgot-password")
         userEvent.type(screen.getByLabelText("Email"), "not@user.email{enter}")
         const submitButton = screen.getByRole("button", {name: "Send Link"})
@@ -362,7 +362,7 @@ describe("AccountApp", () => {
       })
       test("shows unexpected error text if status but no message", async () => {
         server.use(
-          rest.post("/api/user/update-password", (_req, res, ctx) =>
+          rest.post("/api/user/forgot-password", (_req, res, ctx) =>
             res(ctx.status(500)),
           ),
         )
@@ -372,7 +372,7 @@ describe("AccountApp", () => {
       })
       test("shows error text if no status or message", async () => {
         server.use(
-          rest.post("/api/user/update-password", () => {
+          rest.post("/api/user/forgot-password", () => {
             throw Error()
           }),
         )

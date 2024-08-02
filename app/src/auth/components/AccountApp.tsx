@@ -96,10 +96,10 @@ export function AccountApp({route}: {route: AccountRoute}) {
                 await updateAuth(token)
                 return navigate("/", {replace: true})
               case "register":
-                await axios.post("/api/user/create", values)
+                await axios.post("/api/user/register", values)
                 return setInvited(true)
               case "forgot-password":
-                await axios.post("/api/user/update-password", values)
+                await axios.post("/api/user/forgot-password", values)
                 return setInvited(true)
               case "update-password":
                 const res = await axios.patch<TokenRes>(

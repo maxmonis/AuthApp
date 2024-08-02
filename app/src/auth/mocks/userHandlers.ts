@@ -71,7 +71,7 @@ export const userHandlers = [
   }),
 
   /* -------------------- Create Account -------------------- */
-  rest.post("api/user/create", async (req, res, ctx) => {
+  rest.post("api/user/register", async (req, res, ctx) => {
     const {email} = await req.json()
     if (email === mockEmail)
       return res(
@@ -96,7 +96,7 @@ export const userHandlers = [
   }),
 
   /* -------------------- Update Password -------------------- */
-  rest.post("api/user/update-password", async (req, res, ctx) => {
+  rest.post("api/user/forgot-password", async (req, res, ctx) => {
     const {email} = await req.json()
     if (email !== mockEmail)
       return res(

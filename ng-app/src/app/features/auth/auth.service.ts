@@ -95,11 +95,11 @@ export class AuthService {
   }
 
   sendActivationEmail(payload: {email: string; password: string}) {
-    return this.http.post<string>("api/user/create", payload)
+    return this.http.post<string>("api/user/register", payload)
   }
 
   sendPasswordResetEmail(payload: {email: string}) {
-    return this.http.post<string>("/api/user/update-password", payload)
+    return this.http.post<string>("/api/user/forgot-password", payload)
   }
 
   updatePassword(payload: {password: string; token: string}) {
